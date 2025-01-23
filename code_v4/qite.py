@@ -148,7 +148,7 @@ def QITE(H_,db,bmax,lanczos=False,psi0=None,omega=None,ncheck=1,davidson=True):
   hdiag = np.zeros(N,dtype=complex)
   for i in range(N):
    hdiag[i] = Hii(H_,i)
-   print i,hdiag[i]
+   print(i,hdiag[i])
  
   precond = lambda x,e, *args: x/(hdiag-e+1e-4)
  
